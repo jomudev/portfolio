@@ -4,65 +4,176 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joann Murillo | Desarrollador Front-End</title>
+  <meta name="description" content="Te ayudaré a solucionar tus problemas de software, trabajemos en soluciones." />
+  <meta name="author" content="Joann Murillo" />
+  <meta name="keywords" content="Desarrollador, HTML, CSS, Javascript, React, React Native, Web, Móvil" />
   <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="./res/profile.webp" />
 </head>
 <body>
   <main>
-    <div class="introduction">
-      <section class="profile">
+    <section class="introduction">
+      <div class="description">
+        <h1>Joann Murillo <address>La Ceiba, Honduras ✨</address></h1>
+        <h2>Desarrollador Front-End Web y Móvil</h2>
+        <h3>
+          <span class="html">HTML</span>
+          <span class="css">CSS</span>
+          <span class="js">JavaScript</span>
+          <span class="react">ReactJS</span>
+          <span class="RN">React Native</span>
+        </h3>
+        <p>Se el primero en explotar mis habilidades. <a class="contact" target="_blank" href="https://www.linkedin.com/in/hector-joann-murillo-mejia/">🫱🏻‍🫲🏻 Ver Linkedin</a></p>
+      </div>
+      <div class="profile">
         <img
-          src="https://media.licdn.com/dms/image/D4E03AQHcmUvRNtm9rA/profile-displayphoto-shrink_800_800/0/1685108752373?e=1700092800&v=beta&t=ezpKKTNohAITgln-BMN-f3laOFN9kwm4IXpCzSC9V_U"
+          src="./res/profile.webp"
           alt="Retrato de Joann Murillo"
         />
-      </section>
-      <section class="description">
-        <h1>Joann Murillo <span>La Ceiba, Honduras ✨</span></h1>
-        <h2>Desarrollador Front-End Web y Móvil</h2>
-        <h3><span>HTML</span><span>CSS</span><span>JavaScript</span><span>ReactJS</span><span>React Native</span></h3>
-        <p>Se el primero en explotar mis habilidades. <a class="contact" target="_blank" href="https://www.linkedin.com/in/hector-joann-murillo-mejia/">🫱🏻‍🫲🏻 Vamos a ello</a></p>
-      </section>
-    </div>
-    <div class="projects">
+      </div>
+    </section>
+    <section class="projects">
       <h2>🏗️ Proyectos</h2>
-      <p>Estos son mis proyectos 🚀; puede que encuentres algún bug 🐞, suelo hacer cambios en ellos cuando aprendo algo nuevo 😁</p>
-      <h3>Web's</h3>
-      <ul class="web-projects">
-        <li>
-          <div class="img-div">
-            <img 
-              alt="vistra previa captura de pantalla de Legajoo" 
-              src="../res/Legajoo_preview_screenshot.jpg" />
-          </div>
-          <h3>Legajuu!</h3>
-          <a href="https://legajuu.vercel.app" target="_blank">🔗 Visitar</a>
-        </li>
-      </ul>
-      <h3>Apps Móviles</h3>
-      <ul class="mobile-projects">
-        <li>
-          <div class="img-div">
-            <img
-              alt="Vista previa captura de pantalla de Hompai"
-              src="../res/hompai_screenshot_preview.jpeg" />
-          </div>
-          <h3>Hompai</h3>
-          <span>Aún en desarrollo</span>
-        </li>
-        <li>
-          <div class="img-div">
-            <img
-              alt="vista previa captura de pantalla de Maythe's Sales"
-              src="https://play-lh.googleusercontent.com/JbBf8Ognl3SssSLHwqgVAKkboiq06LqImPuf1oHM23VjBnLQ2SgksrsbipFN5yYbu90=w2560-h1440-rw"/>
-          </div>
-          <h3>Maythe's Sales</h3>
-          <a href="https://play.google.com/store/apps/details?id=com.maythesalesmobile" target="_blank">🔗 Visitar</a>
-        </li>
-      </ul>
-    </div>
+      <p>💼 Estos son mis proyectos</p>
+      <section>
+        <h3>Proyectos Web</h3>
+        <ul class="web-projects">
+          <li>
+            <div class="project-description">
+              <h3>Legajuu!</h3>
+              <p>
+                Legajuu! es mi proyecto insignia, diseñado para ayudar a los docentes hondureños a mantener sus documentos laborales organizados de manera eficiente. 📋🚀 
+              </p>
+              <p>
+                Con Legajuu, creamos una solución que elimina  la carga burocrática de los educadores, permitiéndoles centrarse en la enseñanza. 📖
+              </p>
+              <p>
+                Esta plataforma simplifica la creación y gestión de legajos, ofreciendo acceso rápido a documentos esenciales en cualquier momento y lugar. 🌐
+              </p>
+              <details class="project-motivation">
+                <summary><b>Motivación y propósito</b></summary>
+                <p>
+                  Legajuu nació por la necesidad de mi madre y mi suegro (ambos docentes) por tenér una forma rápida de organizar y acceder a su legajo al momento de necesitarlo.  
+                </p>
+                <p>
+                  Ellos escaneaban sus documentos de identificación, títulos y otros documentos necesarios, cada año y recurrían a un café internet para que hicieran la configuración necesaria y luego almacenarlos en una USB o quemarlos en un CD y así poder presentarlos a la Secretaría de Educación y lograr obtener una vacante laboral.
+                </p>
+                <p>
+                  Legajuu cambió eso, ahora ellos mismos pueden tomar una fotografía por medio de su celular y subirlas a Legajuu para que esta haga las configuraciones de forma automática y en un instante, convierte las fotografías a formato PDF, unifíca documentos separados, y les da su nombre con el formato necesario para cada documento.
+                </p>
+              </details>
+              <a href="https://legajuu.vercel.app" target="_blank">🔗 Visitar Legajuu</a>
+              <a class="bg-black" href="https://github.com/jomudev/Legajuu" target="_blank">🩻 Ver Código</a>
+            </div>
+            <div class="project-img">
+              <a href="https://legajuu.vercel.app" class="web-a" target="_blank">
+                <img 
+                  loading="lazy"
+                  alt="vistra previa captura de pantalla de Legajoo" 
+                  src="./res/Legajoo_preview_screenshot.webp" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Apps Móviles</h3>
+        <ul class="mobile-projects">
+          <li>
+            <div class="project-description">
+              <h3 id="hompai">Hompai</h3>
+              <p>
+                Hompai es una aplicación móvil 📱 creada para tener un mejor control de tus compras en el supermercado. 🛒
+              </p>
+              <p>
+                Crea una lista 📝 de artículos y asignales sus respectivos precios y cantidad para obtener el monto total a gastar. 💰
+              </p>
+              <div class="project-motivation">
+                <details>
+                  <summary><b>Motivación y propósito</b></summary>
+                  <p>
+                    Hompai nació poco tiempo luego de contraer matrimonio, debido a mi distraida cabeza, recurrentemente pasaba por alto muchas cosas al momento de realizar la compra de la despensa del hogar.
+                  </p>
+                  <p>
+                    En ocasiones, no recordaba de forma precisa qué alimentos hacían falta en mi despensa, otras veces compraba algo de lo cual había suficiente todavía en casa.
+                  </p>
+                  <p>
+                    Muchas veces por falta de tiempo también olvidaba hacer la lista de compras y llegaba al supermercado confiando en mi débil memoria, así que me puse manos a la obra y empecé a desarollar Hompai.
+                  </p>
+                  <p>
+                    Hompai es mi segunda memoria en cuanto a la compra de despensa se trata, cuando algo hace falta en la despensa rapidamente lo anoto en Hompai; cuando estoy en el supermercado saco mi celular y reviso la lista de artículos guardada en Hompai, ingreso el precio de cada uno de ellos y Hompai me lanza el resultado de lo que gastaré en esa compra; de esa forma puedo llevar una noción de qué artículos sacar en caso de exceder mi presupuesto.
+                  </p>
+                </details>
+              </div>
+              <a href="#hompai">👨‍💻 Aún en Desarrollo</a>
+              <a class="bg-black" href="https://github.com/jomudev/HompaiMobile" target="_blank">🩻 Ver Código</a>
+            </div>
+            <div class="project-img">
+              <a href="#hompai">
+                <img
+                  loading="lazy"
+                  alt="Vista previa captura de pantalla de Hompai"
+                  src="res/Hompai_Android_mockup.webp" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="project-description">
+              <h3>Maythe's Sales</h3>
+              <p>
+                Maythe's Sales es un aplicación destinada a ayudar a los pequeños negocios 🏠 a compartir sus artículos y manejar sus ventas. 💰
+              </p>
+              <p>
+                 👥 Creada para compartir las imágenes de tus productos y su respectiva información de forma sencilla y rápida.
+              </p>
+              <p>
+                💰 Gestionar de forma eficiente las ventas de los productos que se vendan.
+              </p>
+              <div class="project-motivation">
+                <details>
+                  <summary><b>Motivación y Propósito</b></summary>
+                  <p>
+                    Mythe's Sales, fue creada con el propósito de ayudar a mi esposa a compartir los artículos que ella vendía para obtener un ingreso extra.
+                  </p>
+                  <p>
+                    La idea era almacenar cada artículo con su respectivo precio e información y así poder compartilo de forma sencillas por medio de las redes sociales y los mensajes directos que recibía a travez de ellas.
+                  </p>
+                  <p>
+                    Al mismo tiempo poder llevar un mejor control de las ventas que realizaba, y llevar una buena gestión de esos ingresos.
+                  </p>
+                </details>
+              </div>
+              <a href="https://play.google.com/store/apps/details?id=com.maythesalesmobile" target="_blank">🔗 Visitar Maythe's Sales</a>
+              <a class="bg-black" href="https://github.com/jomudev/maythesalesmobile" target="_blank">🩻 Ver Código</a>
+            </div>
+            <div class="project-img">
+              <a href="https://play.google.com/store/apps/details?id=com.maythesalesmobile" target="_blank">
+                <img
+                  loading="lazy"
+                  alt="vista previa captura de pantalla de Maythe's Sales"
+                  src="res/maythesales.webp"/>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      
+    </section>
   </body>
   <footer>
-    <a class="contact" target="_blank" href="https://www.linkedin.com/in/hector-joann-murillo-mejia/">📞 Contactar</a>
+    <div>
+      <p>
+        Una plática en persona es la mejor forma de conocer a alguien.
+        Ponte en contacto conmigo, me conocerás mejor tomando un café ☕
+      </p>
+    </div>
+    <a class="contact-telegram" target="_blank" href="https://telegram.me/joannmurillo">💬 Chat Por Telegram</a>
   </footer>
-  <script src="index.js" defer ></script>
   </main>
+  <div class="bubble" style="box-shadow: 0 0 123px 38px #D83F31; left:0%; top: 75%;"></div>
+  <div class="bubble" style="box-shadow: 0 0 152px 21px #D83F31; left:12%; top: 85%;"></div>
+  <div class="bubble" style="box-shadow: 0 0 121px 132px #9D76C1; left:64%; top: 62%;"></div>
+  <div class="bubble" style="box-shadow: 0 0 123px 64px #F4E869; left:37%; top: 21%;"></div>
+  <div class="bubble" style="box-shadow: 0 0 243px 34px #5B0888; left:23%; top: 67%;"></div>
+  <div class="bubble" style="box-shadow: 0 0 231px 142px #088395; left:75%; top: 20%;"></div>
 </html>
