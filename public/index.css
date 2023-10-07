@@ -141,7 +141,6 @@ a:active {
 footer {
   display: inline-flex;
   align-items: center;
-  padding: 12px;
   gap: 1rem;
 }
 
