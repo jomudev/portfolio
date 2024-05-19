@@ -366,7 +366,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../res/cover.jpg");
+    background-image: url("../res/cover.webp");
     background-position: 0;
     background-size: cover;
     padding: 32px 0;
