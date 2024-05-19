@@ -5,17 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joann Murillo | Desarrollador Front-End</title>
   <meta name="description" content="Te ayudaré a solucionar tus problemas de software, trabajemos en soluciones." />
-  <meta name="author" content="Joann Murillo" />
-  <meta name="keywords" content="Desarrollador, HTML, CSS, Javascript, React, React Native, Web, Móvil" />
-  <link rel="stylesheet" href="index.css" />
+  <meta name="author" content="Hector Joann Murillo Mejia" />
+  <meta name="keywords" content="desarrollador front end, front end, hector, joann, murillo, mejia, desarrollador, html, css, desarrollador javascript, desarrollador react, sql, mysql, react native, web, móvil" />
+  <link rel="stylesheet" href="css/index.css" />
   <link rel="icon" href="./res/profile.webp" />
 </head>
 <body>
-  <div id="weather"></div>
   <main>
-    <section class="introduction">
+    <section class="introduction" id="introduction">
       <div class="description">
-        <h1 class="name">Joann Murillo <address>La Ceiba, Honduras ✨</address></h1>
+        <h1 class="name">Joann Murillo <address>✨ La Ceiba, Honduras</address></h1>
         <h2>Desarrollador Front-End Web y Móvil</h2>
         <h3>
           <span class="html">HTML</span>
@@ -26,18 +25,17 @@
         </h3>
         <p>Se el primero en explotar mis habilidades. <a class="contact" target="_blank" href="https://www.linkedin.com/in/hector-joann-murillo-mejia/">🫱🏻‍🫲🏻 Ver Linkedin</a></p>
       </div>
-      <a href="https://play.google.com/store/apps/dev?id=8791295978489296138" target="_blank" class="profile">
+      <a href ="https://play.google.com/store/apps/dev?id=8791295978489296138" target="_blank" class="profile">
         <img
           src="./res/profile.webp"
           alt="Retrato de Joann Murillo"
         />
       </a>
     </section>
-    <section class="projects">
-      <h2>🏗️ Proyectos</h2>
-      <p>💼 Estos son mis proyectos</p>
-      <section>
-        <h3>Proyectos Web</h3>
+    <section class="projects" id="projects">
+      <h2 style="text-align: center;" >🏗️ Proyectos</h2>
+      <section id="web-projects">
+        <h3>🧑🏻‍💻 Proyectos Web</h3>
         <ul class="web-projects">
           <li>
             <div class="project-description">
@@ -77,8 +75,8 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h3>Apps Móviles</h3>
+      <section id="apps-projects">
+        <h3>📱 Apps Móviles</h3>
         <ul class="mobile-projects">
           <li>
             <div class="project-description">
@@ -160,22 +158,46 @@
       </section>
       
     </section>
+    <section class="certifies" id="certifies">
+      <h2>Certificados</h2>
+      <ul>
+        <li>
+          <a href="https://platzi.com/p/Parzzival/curso/3175-asincronismo-js/diploma/detalle/">  
+            <h4>Asincronismo en JavaScript</h4>
+            <image src="./res/certifies/diploma-asincronismo-js.jpg" width="100%" />
+          </a>
+        </li>
+        <li>
+          <a href="https://platzi.com/p/Parzzival/curso/2789-blender/diploma/detalle/">
+            <h4>Diseño 3D en Blender</h4>
+            <image src="./res/certifies/diploma-blender.jpg" width="100%" />
+          </a>
+        </li>
+        <li>
+          <a href="https://platzi.com/p/Parzzival/curso/1945-ingles-principiantes-2020/diploma/detalle/">
+            <h4>Ingles para Principiantes</h4>
+            <image src="./res/certifies/diploma-ingles-principiantes-2020.jpg" width="100%" />
+          </a>
+        </li>
+        <li>
+          <a href="https://platzi.com/p/Parzzival/curso/1474-oop/diploma/detalle/">
+            <h4>Programación Orientada a Objetos</h4>
+            <image src="./res/certifies/diploma-oop.jpg" width="100%" />
+          </a>
+          </li>
+      </ul>  
+    </section>
   </body>
   <footer>
-    <div>
+    <div style="flex: 4;">
       <p>
         Una plática en persona es la mejor forma de conocer a alguien.
         Ponte en contacto conmigo, me conocerás mejor tomando un café ☕
       </p>
     </div>
-    <a class="contact-telegram" target="_blank" href="https://telegram.me/joannmurillo">💬 Chat Por Telegram</a>
+    <div style="flex: 1;">
+      <a class="contact-telegram" target="_blank" href="https://telegram.me/joannmurillo">💬 Chat Por Telegram</a>
+    </div>
   </footer>
-  </main>
-  <div class="bubble" style="box-shadow: 0 0 123px 38px #D83F31; left:0%; top: 75%;"></div>
-  <div class="bubble" style="box-shadow: 0 0 152px 21px #D83F31; left:12%; top: 85%;"></div>
-  <div class="bubble" style="box-shadow: 0 0 121px 132px #9D76C1; left:64%; top: 62%;"></div>
-  <div class="bubble" style="box-shadow: 0 0 123px 64px #F4E869; left:37%; top: 21%;"></div>
-  <div class="bubble" style="box-shadow: 0 0 243px 34px #5B0888; left:23%; top: 67%;"></div>
-  <div class="bubble" style="box-shadow: 0 0 231px 142px #088395; left:75%; top: 20%;"></div>
-  <script defer src="res/weather.js"></script>
+  </main> 
 </html>
