@@ -22,11 +22,26 @@ h4 {
   font-size: 12;
 }
 
+img {
+  image-rendering: optimizeSpeed;
+}
+
 .introduction {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url("../res/cover.webp");
+  background-position: 0 -250px;
+  background-size: cover;
+  image-rendering: optimizeQuality;
+}
+
+.description {
+  background-color: white;
+  width: 100%;
+  text-align: center;
 }
 
 .description h1 address {
@@ -108,12 +123,7 @@ p {
 }
 
 .profile img {
-  transition: 300ms ease-in;
-  filter: saturate(200%);
-}
-
-.profile img:hover {
-  transform: scale(100%);
+  filter: saturate(150%);
 }
 
 .profile:active {
@@ -123,8 +133,8 @@ p {
 .profile img {
   border-radius: 50%;
   padding: 0;
-  width: 40%;
-  height: 40%;
+  width: 512;
+  height: auto;
 }
 
 .description h1, h2 {
@@ -193,11 +203,12 @@ footer {
   margin-top: 24px;
   align-items: center;
   gap: 1rem;
+  padding: 8px;
 }
 
 .contact-telegram {
   text-decoration: none;
-  color: wheat;
+  color: white;
   height: 24px;
   background: #0a66c2;
   font-weight: bold;
@@ -219,6 +230,10 @@ footer {
   text-align: center;
   width: 100%;
   color: #fafafa;
+}
+
+.projects {
+  padding: 8px;
 }
 
 .projects ul li {
@@ -297,6 +312,8 @@ footer {
 
 .certifies { 
   width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 .certifies ul {
@@ -316,6 +333,7 @@ footer {
 .certifies a {
   background-color: #fdfdfdfd;
   text-decoration: none;
+  width: 100%;
   color: black;
 }
 
@@ -341,6 +359,10 @@ footer {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    background-image: url("../res/cover.webp");
+    background-position: 0 -250px;
+    background-size: cover;
+    image-rendering: optimizeQuality;
   }
 
   .contact {
@@ -363,21 +385,24 @@ footer {
   }
   
   .profile {
-    display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../res/cover.webp");
-    background-position: 0;
-    background-size: cover;
     padding: 32px 0;
     width: 100%;
+    overflow: hidden;
+    margin: 0;
   }
-  
-  .profile img {
+
+  .profile:hover {
+    filter: none;
+    margin: 0;
+  }
+
+  .profile .profile-img {
     border-radius: 50%;
+    width: 250px;
     padding: 0;
-    width: 25%;
-    height: 25%;
+    height: auto;
   }
 
   .projects {
@@ -460,6 +485,7 @@ footer {
   
   .certifies li {
     display: flex;
+    width: 100%;
   }
   
   .certifies a {
