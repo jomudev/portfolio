@@ -22,6 +22,7 @@ const server = http.createServer(async (req, res) => {
     ".jpeg": 'image/jpeg',
     ".jpg": 'image/jpeg',
     ".png": 'image/png',
+    ".webp": 'image/webp',
   };
 
   if (fileExtension === ".jpeg" || fileExtension === ".jpg" || fileExtension === ".png" || fileExtension == ".webp") {
