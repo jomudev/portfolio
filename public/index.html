@@ -1,40 +1,36 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#4F46E5">
-  
-  <!-- Primary Meta Tags -->
-  <title>Joann Murillo | Desarrollador Front-End Web y Móvil</title>
-  <meta name="description" content="Desarrollador Front-End especializado en React, React Native, JavaScript. Creo soluciones web y móviles como Legajuu, Hompai y Maythe's Sales.">
-  <meta name="author" content="Hector Joann Murillo Mejia">
-  <meta name="keywords" content="desarrollador front end, desarrollador Honduras, desarrollador react, react native, javascript, html, css, desarrollo web, desarrollo móvil, La Ceiba">
-  <meta name="robots" content="index, follow">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://joannmurillo.com/">
-  <meta property="og:title" content="Joann Murillo | Desarrollador Front-End Web y Móvil">
-  <meta property="og:description" content="Desarrollador Front-End especializado en React, React Native, JavaScript. Creo soluciones web y móviles como Legajuu, Hompai y Maythe's Sales.">
-  <meta property="og:image" content="https://joannmurillo.site/res/profile.webp">
-  <meta property="og:locale" content="es_HN">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joann Murillo —  · Frontend Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Joann Murillo —  and Frontend Engineer specializing in React, React Native, Node.js and modern cloud-native architectures. Available for hire." />
+  <meta name="keywords" content="Joann Murillo, , Frontend Developer, React, React Native, Node.js, Full-Stack, Cloud, AWS, GCP, Azure, PostgreSQL, MongoDB" />
+  <meta name="author" content="Hector Joann Murillo Mejia" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Joann Murillo — Frontend Engineer & Full-Stack Developer" />
+  <meta property="og:description" content="building production-ready web & mobile experiences using React, Node.js, and cloud technologies." />
+  <meta property="og:image" content="https://joannmurillo.site/res/profile.webp" />
+  <meta property="og:url" content="https://joannmurillo.com/" />
+  <meta property="og:locale" content="en_US" />
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://joannmurillo.com/">
-  <meta property="twitter:title" content="Joann Murillo | Desarrollador Front-End Web y Móvil">
-  <meta property="twitter:description" content="Desarrollador Front-End especializado en React, React Native, JavaScript. Creo soluciones web y móviles como Legajuu, Hompai y Maythe's Sales.">
-  <meta property="twitter:image" content="https://joannmurillo.site/res/profile.webp">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@jomudev" />
+  <meta name="twitter:title" content="Joann Murillo — Frontend Engineer" />
+  <meta name="twitter:description" content="production-ready frontends, mobile apps and cloud services." />
+  <meta name="twitter:image" content="https://joannmurillo.site/res/profile.webp" />
 
-  <!-- Preload critical resources -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Preconnect & Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-  </noscript>
-  
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+  <!-- Tailwind (CDN for quick prototyping) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -43,478 +39,399 @@
           colors: {
             primary: {
               50: '#f0f9ff',
-              100: '#e0f2fe',
-              200: '#bae6fd',
-              300: '#7dd3fc',
-              400: '#38bdf8',
+              100: '#e6f6ff',
               500: '#0ea5e9',
-              600: '#0284c7',
-              700: '#0369a1',
-              800: '#075985',
-              900: '#0c4a6e',
+              700: '#0369a1'
             },
-            secondary: {
-              50: '#f8fafc',
-              100: '#f1f5f9',
-              200: '#e2e8f0',
-              300: '#cbd5e1',
-              400: '#94a3b8',
-              500: '#64748b',
-              600: '#475569',
-              700: '#334155',
-              800: '#1e293b',
-              900: '#0f172a',
+            accent: {
+              500: '#7c3aed'
             }
+          },
+          fontFamily: {
+            inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
           }
         }
       }
     }
   </script>
+
   <link rel="icon" href="./res/profile.webp" type="image/webp">
-  
-  <!-- Structured Data -->
+
+  <!-- Structured Data (Person) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Hector Joann Murillo Mejia",
-    "jobTitle": "Desarrollador Front End Web y Móvil",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "La Ceiba",
-      "addressCountry": "Honduras"
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Hector Joann Murillo Mejia",
+    "alternateName":"Joann Murillo",
+    "jobTitle":"Frontend Engineer & Full-Stack Developer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Harvard University"
     },
-    "url": "https://joannmurillo.com",
-    "sameAs": [
+    "url":"https://joannmurillo.com",
+    "sameAs":[
       "https://www.linkedin.com/in/hector-joann-murillo-mejia/",
       "https://github.com/jomudev",
       "https://play.google.com/store/apps/dev?id=8791295978489296138"
     ],
-    "knowsAbout": ["HTML", "CSS", "JavaScript", "ReactJS", "React Native", "Front-end Development"]
+    "knowsAbout":[
+      "HTML","CSS","JavaScript","TypeScript","React","React Native","Node.js","Express","Databases","AWS","GCP","Docker","Kubernetes"
+    ],
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"La Ceiba",
+      "addressCountry":"Honduras"
+    }
   }
   </script>
-  
+
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
-    }
-    
-    .tech-tag {
-      transition: all 0.3s ease;
-    }
-    
-    .tech-tag:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    }
-    
-    .project-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    }
-    
-    .certificate-card {
-      transition: transform 0.3s ease;
-    }
-    
-    .certificate-card:hover {
-      transform: scale(1.02);
-    }
-    
-    .gradient-bg {
-      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-    }
-    
-    .section-title {
-      position: relative;
-      display: inline-block;
-    }
-    
-    .section-title:after {
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-      width: 50%;
-      height: 4px;
-      background: linear-gradient(90deg, #0ea5e9, #7dd3fc);
-      border-radius: 2px;
-    }
-    
-    @media (max-width: 768px) {
-      .section-title:after {
-        width: 30%;
-      }
-    }
+    :root { color-scheme: light dark; }
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .soft-glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(6px); }
+    .soft-glass-dark { background: rgba(10,10,12,0.48); backdrop-filter: blur(6px); }
   </style>
 </head>
-<body class="bg-gradient-to-br from-primary-50 to-primary-100 text-secondary-800">
-  <a href="#main-content" class="skip-link sr-only">Saltar al contenido principal</a>
-  
-  <header class="bg-white shadow-sm sticky top-0 z-10">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">Joann Murillo</h1>
-      <nav aria-label="Navegación principal">
-        <ul class="flex space-x-6">
-          <li><a href="#introduction" class="text-primary-600 hover:text-primary-800 font-medium transition-colors">Inicio</a></li>
-          <li><a href="#projects" class="text-primary-600 hover:text-primary-800 font-medium transition-colors">Proyectos</a></li>
-          <li><a href="#certifies" class="text-primary-600 hover:text-primary-800 font-medium transition-colors">Certificados</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
-  <main id="main-content" class="max-w-6xl mx-auto px-4 py-8">
-    <!-- Introduction Section -->
-    <section class="mb-16 py-12" id="introduction">
-      <div class="flex flex-col md:flex-row items-center">
-        <a href="https://play.google.com/store/apps/dev?id=8791295978489296138" target="_blank" class="mb-6 md:mb-0 md:mr-8" aria-label="Ver aplicaciones en Google Play">
-          <figure class="relative">
-            <div class="absolute -inset-2 bg-primary-200 rounded-full opacity-50 blur"></div>
-            <img
-              loading="lazy"
-              src="./res/profile.webp"
-              alt="Retrato de Joann Murillo - Desarrollador Front End"
-              width="224"
-              height="224"
-              class="relative rounded-full w-40 h-40 md:w-56 md:h-56 object-cover border-4 border-white shadow-lg"
-            />
-          </figure>
-        </a>
-        <div class="text-center md:text-left">
-          <h2 class="text-3xl md:text-4xl font-bold mb-2">
-            <span class="bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">Joann Murillo</span>
-            <address class="inline-block not-italic text-primary-600 text-xl md:text-2xl font-normal ml-2">✨ La Ceiba, Honduras</address>
-          </h2>
-          <p class="text-xl md:text-2xl text-secondary-600 mb-4">Desarrollador Front End Web y Móvil</p>
-          <div class="flex flex-wrap justify-center md:justify-start gap-2 mb-6" aria-label="Tecnologías que domino">
-            <span class="tech-tag bg-[#E34F26] text-white px-3 py-1 rounded-full text-sm font-medium">HTML</span>
-            <span class="tech-tag bg-[#1572B6] text-white px-3 py-1 rounded-full text-sm font-medium">CSS</span>
-            <span class="tech-tag bg-[#F7DF1E] text-black px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
-            <span class="tech-tag bg-[#61DAFB] text-black px-3 py-1 rounded-full text-sm font-medium">ReactJS</span>
-            <span class="tech-tag bg-[#61DAFB] text-black px-3 py-1 rounded-full text-sm font-medium">React Native</span>
-          </div>
-          <p class="text-lg mb-6 max-w-2xl">
-            Mi objetivo es poner mis habilidades y experiencia a su servicio para impulsar sus resultados desde el primer día. Estoy listo para aportar valor inmediato a su equipo. Conectemos en LinkedIn para explorar cómo puedo contribuir al éxito de su empresa.
-            <a class="contact text-primary-600 hover:text-primary-800 font-medium underline transition-colors" target="_blank" href="https://www.linkedin.com/in/hector-joann-murillo-mejia/" aria-label="Ver perfil de LinkedIn">
-              🫱🏻‍🫲🏻 Ver Linkedin
-            </a>
-          </p>
-          <a href="#projects" class="inline-flex items-center text-primary-700 font-medium group">
-            Ver mis proyectos
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1 group-hover:translate-y-0.5 transition-transform" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-            </svg>
+<body class="text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-30 border-b dark:border-slate-900/80 bg-white/60 backdrop-blur-sm soft-glass dark:bg-slate-900/60 dark:soft-glass-dark">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-4">
+          <a href="#hero" class="flex items-center gap-3">
+            <img src="./res/profile.webp" alt="Joann Murillo portrait" width="44" height="44" class="rounded-full border-2 border-white shadow-sm" />
+            <div class="leading-tight">
+              <h1 class="text-lg font-semibold text-slate-900 dark:text-white">Joann Murillo</h1>
+              <p class="text-xs text-slate-500 dark:text-slate-300">Frontend & Full-Stack</p>
+            </div>
           </a>
         </div>
+
+        <nav aria-label="Primary navigation" class="hidden md:flex items-center gap-6">
+          <a href="#projects" class="text-slate-700 hover:text-slate-700 dark:text-slate-300">Projects</a>
+          <a href="#skills" class="text-slate-700 hover:text-slate-700 dark:text-slate-300">Stacks</a>
+          <a href="#experience" class="text-slate-700 hover:text-slate-700 dark:text-slate-300">Experience</a>
+          <a href="#contact" class="text-slate-700 hover:text-slate-700 dark:text-slate-300">Contact</a>
+          <a href="https://www.linkedin.com/in/hector-joann-murillo-mejia/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-primary-600 dark:text-white px-3 py-1.5 rounded-md shadow-sm hover:bg-primary-700">
+            Hire me
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7v7M10 14L21 3"></path></svg>
+          </a>
+        </nav>
+
+        <!-- Mobile menu & dark toggle -->
+        <!-- <div class="flex items-center gap-3">
+          <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800">
+            <svg id="theme-icon" class="w-5 h-5 text-slate-700 dark:text-slate-200" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v1M12 20v1M4.22 4.22l.7.7M18.08 18.08l.7.7M1 12h1M22 12h1M4.22 19.78l.7-.7M18.08 5.92l.7-.7M12 6a6 6 0 100 12 6 6 0 000-12z"/></svg>
+          </button> 
+
+          <button id="mobile-open" aria-label="Open menu" class="md:hidden p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800">
+            <svg class="w-6 h-6 text-slate-700 dark:text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div> -->
       </div>
-    </section>
+    </div>
+  </header>
 
-    <!-- Projects Section -->
-    <section class="mb-16" id="projects">
-      <h2 class="text-3xl font-bold text-center mb-12 section-title">🏗️ Proyectos</h2>
-      
-      <!-- Web Projects -->
-      <section id="web-projects" class="mb-12">
-        <h3 class="text-2xl font-semibold mb-6 flex items-center text-secondary-700">🧑🏻‍💻 <span class="ml-2">Proyectos Web</span></h3>
-        
-        <article class="bg-white rounded-xl shadow-lg overflow-hidden project-card border border-primary-100">
-          <div class="p-6 md:flex">
-            <div class="md:w-7/12 md:pr-6">
-              <h4 class="text-xl font-bold text-primary-700 mb-3">Legajuu!</h4>
-              <p class="mb-3 text-secondary-600">
-                Legajuu! es mi proyecto insignia, diseñado para ayudar a los docentes hondureños a mantener sus documentos laborales organizados de manera eficiente. 📋🚀 
-              </p>
-              <p class="mb-3 text-secondary-600">
-                Con Legajuu, creamos una solución que elimina la carga burocrática de los educadores, permitiéndoles centrarse en la enseñanza. 📖
-              </p>
-              <p class="mb-4 text-secondary-600">
-                Esta plataforma simplifica la creación y gestión de legajos, ofreciendo acceso rápido a documentos esenciales en cualquier momento y lugar. 🌐
-              </p>
-              
-              <details class="project-motivation mb-4">
-                <summary class="cursor-pointer font-medium text-primary-600 hover:text-primary-800 transition-colors"><b>Motivación y propósito</b></summary>
-                <div class="mt-3 pl-4 border-l-2 border-primary-200 text-secondary-600">
-                  <p class="mb-2">
-                    Legajuu nació por la necesidad de mi madre y mi suegro (ambos docentes) por tenér una forma rápida de organizar y acceder a su legajo al momento de necesitarlo.  
-                  </p>
-                  <p class="mb-2">
-                    Ellos escaneaban sus documentos de identificación, títulos y otros documentos necesarios, cada año y recurrían a un café internet para que hicieran la configuración necesaria y luego almacenarlos en una USB o quemarlos en un CD y así poder presentarlos a la Secretaría de Educación y lograr obtener una vacante laboral.
-                  </p>
-                  <p>
-                    Legajuu cambió eso, ahora ellos mismos pueden tomar una fotografía por medio de su celular y subirlas a Legajuu para que esta haga las configuraciones de forma automática y en un instante, convierte las fotografías a formato PDF, unifíca documentos separados, y les da su nombre con el formato necesario para cada documento.
-                  </p>
-                </div>
-              </details>
-              
-              <div class="flex flex-wrap gap-3">
-                <a href="https://legajuu.vercel.app" target="_blank" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-colors shadow-md" aria-label="Visitar sitio web de Legajuu">
-                  🔗 Visitar Legajuu
-                </a>
-                
-              </div>
-            </div>
-            
-            <div class="mt-6 md:mt-0 md:w-5/12">
-              <a href="https://legajuu.vercel.app" class="web-a block rounded-lg overflow-hidden shadow-md transition-transform hover:scale-[1.02]" target="_blank" aria-label="Vista previa de Legajuu">
-                <img
-                  loading="lazy"
-                  alt="Captura de pantalla de Legajuu - Plataforma para gestión de documentos docentes" 
-                  src="./res/Legajoo_preview_screenshot.webp"
-                  width="600"
-                  height="400"
-                  class="w-full h-auto object-cover rounded-lg"
-                />
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
-      
-      <!-- Mobile Apps -->
-      <section id="apps-projects">
-        <h3 class="text-2xl font-semibold mb-6 flex items-center text-secondary-700">📱 <span class="ml-2">Apps Móviles</span></h3>
-        <!-- Lili's Delivery -->
-        <article class="bg-white rounded-xl shadow-lg overflow-hidden project-card border border-primary-100 mb-8">
-          <div class="p-6 md:flex">
-            <div class="md:w-7/12 md:pr-6">
-              <h4 class="text-xl font-bold text-primary-700 mb-3" id="lili-delivery">Lili's Delivery</h4>
-              <p class="mb-3 text-secondary-600">
-                Lili's Delivery es una aplicación móvil 📱 diseñada para facilitar la entrega de productos desde negocios locales directamente a los clientes. 🏪➡️🏠
-              </p>
-              <p class="mb-4 text-secondary-600">
-                Permite a los usuarios realizar pedidos de manera rápida, elegir entre varias opciones de pago y recibir sus compras de forma eficiente y segura. 💳🚚
-              </p>
+  <!-- Mobile menu panel -->
+  <div id="mobile-panel" class="fixed inset-0 z-40 hidden bg-black/40">
+    <div class="absolute right-0 w-64 h-full bg-white dark:bg-slate-900 p-4 shadow-lg">
+      <button id="mobile-close" aria-label="Close menu" class="mb-6 p-2">
+        Close
+      </button>
+      <nav class="flex flex-col gap-3">
+        <a href="#projects" class="py-2">Projects</a>
+        <a href="#skills" class="py-2">Stacks</a>
+        <a href="#experience" class="py-2">Experience</a>
+        <a href="#contact" class="py-2">Contact</a>
+        <a href="https://www.linkedin.com/in/hector-joann-murillo-mejia/" target="_blank" class="py-2 bg-primary-600 text-white rounded-md text-center mt-2">Hire me</a>
+      </nav>
+    </div>
+  </div>
 
-              <details class="project-motivation mb-4">
-                <summary class="cursor-pointer font-medium text-primary-600 hover:text-primary-800 transition-colors">
-                  <b>Motivación y Propósito</b>
-                </summary>
-                <div class="mt-3 pl-4 border-l-2 border-primary-200 text-secondary-600">
-                  <p class="mb-2">
-                    Lili's Delivery nació para apoyar tanto a los negocios locales como a los ciudadanos, optimizando el proceso de pedidos y entregas.
-                  </p>
-                  <p>
-                    La aplicación garantiza que cada pedido sea manejado de manera eficiente, mostrando detalles claros, tarifas de envío y métodos de pago adaptados al país del usuario.
-                  </p>
-                </div>
-              </details>
+  <!-- Hero -->
+  <main id="hero" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <div class="md:col-span-2">
+        <p class="text-sm text-primary-600 font-medium">Available for short-term & long-term contracts</p>
+        <h2 class="mt-4 text-4xl font-extrabold text-slate-900 dark:text-white">I build polished web & mobile products that scale</h2>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
+          I'm Joann — a Frontend Engineer and Full-Stack developer focused on performance, accessibility, and maintainable code. I ship production-ready React, React Native and cloud-backed systems used by businesses to drive measurable results.
+        </p>
 
-              <div class="flex flex-wrap gap-3">
-                <a href="https://play.google.com/store/apps/details?id=com.jomudev.liliDeliveryCustomer&pcampaignid=web_share" target="_blank" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-colors shadow-md" aria-label="Descargar Lili's Delivery en Google Play">
-                  🔗 Visitar Lili's Delivery
-                </a>
-                
-              </div>
-            </div>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 bg-accent-500 text-white px-5 py-3 rounded-lg shadow hover:translate-y-0.5">Let's talk — hire me</a>
+          <a href="./res/Joann_Murillo_Resume.pdf" target="_blank" class="inline-flex items-center gap-2 border border-slate-200 px-4 py-3 rounded-lg hover:bg-slate-800" rel="noopener">Download resume (PDF)</a>
+          <a href="#projects" class="inline-flex items-center gap-2 dark:text-slate-100 text-slate-700 px-4 py-3 rounded-lg">View projects →</a>
+        </div>
 
-            <div class="mt-6 md:mt-0 md:w-5/12">
-              <a href="https://play.google.com/store/apps/details?id=com.lilidelivery" target="_blank" class="block rounded-lg overflow-hidden shadow-md transition-transform hover:scale-[1.02]" aria-label="Vista previa de Lili's Delivery">
-                <img
-                  loading="lazy"
-                  alt="Captura de pantalla de Lili's Delivery - App de delivery local"
-                  src="./res/lili_preview_screenshot.jpg"
-                  width="600"
-                  height="400"
-                  class="w-full h-auto object-cover rounded-lg"
-                />
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Hompai -->
-        <article class="bg-white rounded-xl shadow-lg overflow-hidden project-card border border-primary-100 mb-8">
-          <div class="p-6 md:flex">
-            <div class="md:w-7/12 md:pr-6">
-              <h4 class="text-xl font-bold text-primary-700 mb-3" id="hompai">Hompai</h4>
-              <p class="mb-3 text-secondary-600">
-                Hompai es una aplicación móvil 📱 creada para tener un mejor control de tus compras en el supermercado. 🛒
-              </p>
-              <p class="mb-4 text-secondary-600">
-                Crea una lista 📝 de artículos y asignales sus respectivos precios y cantidad para obtener el monto total a gastar. 💰
-              </p>
-              
-              <details class="project-motivation mb-4">
-                <summary class="cursor-pointer font-medium text-primary-600 hover:text-primary-800 transition-colors"><b>Motivación y propósito</b></summary>
-                <div class="mt-3 pl-4 border-l-2 border-primary-200 text-secondary-600">
-                  <p class="mb-2">
-                    Hompai nació poco tiempo luego de contraer matrimonio, debido a mi distraida cabeza, recurrentemente pasaba por alto muchas cosas al momento de realizar la compra de la despensa del hogar.
-                  </p>
-                  <p class="mb-2">
-                    En ocasiones, no recordaba de forma precisa qué alimentos hacían falta en mi despensa, otras veces compraba algo de lo cual había suficiente todavía en casa.
-                  </p>
-                  <p class="mb-2">
-                    Muchas veces por falta de tiempo también olvidaba hacer la lista de compras y llegaba al supermercado confiando en mi débil memoria, así que me puse manos a la obra y empecé a desarollar Hompai.
-                  </p>
-                  <p>
-                    Hompai es mi segunda memoria en cuanto a la compra de despensa se trata, cuando algo hace falta en la despensa rapidamente lo anoto en Hompai; cuando estoy en el supermercado saco mi celular y reviso la lista de artículos guardada en Hompai, ingreso el precio de cada uno de ellos y Hompai me lanza el resultado de lo que gastaré en esa compra; de esa forma puedo llevar una noción de qué artículos sacar en caso de exceder mi presupuesto.
-                  </p>
-                </div>
-              </details>
-              
-              <div class="flex flex-wrap gap-3">
-                <a href="https://play.google.com/store/apps/details?id=com.hompaimobile" target="_blank" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-colors shadow-md" aria-label="Descargar Hompai en Google Play">
-                  🔗 Visitar
-                </a>
-                
-              </div>
-            </div>
-            
-            <div class="mt-6 md:mt-0 md:w-5/12">
-              <a href="https://play.google.com/store/apps/details?id=com.hompaimobile" class="block rounded-lg overflow-hidden shadow-md transition-transform hover:scale-[1.02]" aria-label="Vista previa de Hompai">
-                <img
-                  loading="lazy"
-                  alt="Captura de pantalla de Hompai - App para lista de compras"
-                  src="res/Hompai_Android_mockup.webp"
-                  width="600"
-                  height="400"
-                  class="w-full h-auto object-cover rounded-lg"
-                />
-              </a>
-            </div>
-          </div>
-        </article>
-        
-        <!-- Maythe's Sales -->
-        <article class="bg-white rounded-xl shadow-lg overflow-hidden project-card border border-primary-100">
-          <div class="p-6 md:flex">
-            <div class="md:w-7/12 md:pr-6">
-              <h4 class="text-xl font-bold text-primary-700 mb-3">Maythe's Sales</h4>
-              <p class="mb-3 text-secondary-600">
-                Maythe's Sales es un aplicación destinada a ayudar a los pequeños negocios 🏠 a compartir sus artículos y manejar sus ventas. 💰
-              </p>
-              <p class="mb-3 text-secondary-600">
-                👥 Creada para compartir las imágenes de tus productos y su respectiva información de forma sencilla y rápida.
-              </p>
-              <p class="mb-4 text-secondary-600">
-                💰 Gestionar de forma eficiente las ventas de los productos que se vendan.
-              </p>
-              
-              <details class="project-motivation mb-4">
-                <summary class="cursor-pointer font-medium text-primary-600 hover:text-primary-800 transition-colors"><b>Motivación y Propósito</b></summary>
-                <div class="mt-3 pl-4 border-l-2 border-primary-200 text-secondary-600">
-                  <p class="mb-2">
-                    Mythe's Sales, fue creada con el propósito de ayudar a mi esposa a compartir los artículos que ella vendía para obtener un ingreso extra.
-                  </p>
-                  <p class="mb-2">
-                    La idea era almacenar cada artículo con su respectivo precio e información y así poder compartilo de forma sencillas por medio de las redes sociales y los mensajes directos que recibía a travez de ellas.
-                  </p>
-                  <p>
-                    Al mismo tiempo poder llevar un mejor control de las ventas que realizaba, y llevar una buena gestión de esos ingresos.
-                  </p>
-                </div>
-              </details>
-              
-              <div class="flex flex-wrap gap-3">
-                <a href="https://play.google.com/store/apps/details?id=com.maythesalesmobile" target="_blank" class="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-colors shadow-md" aria-label="Descargar Maythe's Sales en Google Play">
-                  🔗 Visitar Maythe's Sales
-                </a>
-                
-              </div>
-            </div>
-            
-            <div class="mt-6 md:mt-0 md:w-5/12">
-              <a href="https://play.google.com/store/apps/details?id=com.maythesalesmobile" target="_blank" class="block rounded-lg overflow-hidden shadow-md transition-transform hover:scale-[1.02]" aria-label="Vista previa de Maythe's Sales">
-                <img
-                  loading="lazy"
-                  alt="Captura de pantalla de Maythe's Sales - App para gestión de ventas"
-                  src="res/maythesales.webp"
-                  width="600"
-                  height="400"
-                  class="w-full h-auto object-cover rounded-lg"
-                />
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
-    </section>
-
-    <!-- Certificates Section -->
-    <section class="mb-16" id="certifies">
-      <h2 class="text-3xl font-bold text-center mb-12 section-title">Certificados</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <article class="certificate-card bg-white rounded-xl shadow-md overflow-hidden border border-primary-100">
-          <a href="https://platzi.com/p/Parzzival/curso/3175-asincronismo-js/diploma/detalle/" target="_blank" class="block hover:no-underline" aria-label="Ver certificado de Asincronismo en JavaScript">  
-            <h3 class="text-lg font-semibold p-4 pb-0 text-primary-700">Asincronismo en JavaScript</h3>
-            <img src="./res/certifies/diploma-asincronismo-js.webp" alt="Certificado de Asincronismo en JavaScript de Platzi" width="600" height="400" class="w-full h-auto" />
-          </a>
-        </article>
-        
-        <article class="certificate-card bg-white rounded-xl shadow-md overflow-hidden border border-primary-100">
-          <a href="https://platzi.com/p/Parzzival/curso/2789-blender/diploma/detalle/" target="_blank" class="block hover:no-underline" aria-label="Ver certificado de Diseño 3D en Blender">
-            <h3 class="text-lg font-semibold p-4 pb-0 text-primary-700">Diseño 3D en Blender</h3>
-            <img src="./res/certifies/diploma-blender.webp" alt="Certificado de Diseño 3D en Blender de Platzi" width="600" height="400" class="w-full h-auto" />
-          </a>
-        </article>
-        
-        <article class="certificate-card bg-white rounded-xl shadow-md overflow-hidden border border-primary-100">
-          <a href="https://platzi.com/p/Parzzival/curso/1945-ingles-principiantes-2020/diploma/detalle/" target="_blank" class="block hover:no-underline" aria-label="Ver certificado de Inglés para Principiantes">
-            <h3 class="text-lg font-semibold p-4 pb-0 text-primary-700">Ingles para Principiantes</h3>
-            <img src="./res/certifies/diploma-ingles-principiantes-2020.webp" alt="Certificado de Inglés para Principiantes de Platzi" width="600" height="400" class="w-full h-auto" />
-          </a>
-        </article>
-        
-        <article class="certificate-card bg-white rounded-xl shadow-md overflow-hidden border border-primary-100">
-          <a href="https://platzi.com/p/Parzzival/curso/1474-oop/diploma/detalle/" target="_blank" class="block hover:no-underline" aria-label="Ver certificado de Programación Orientada a Objetos">
-            <h3 class="text-lg font-semibold p-4 pb-0 text-primary-700">Programación Orientada a Objetos</h3>
-            <img src="./res/certifies/diploma-oop.webp" alt="Certificado de Programación Orientada a Objetos de Platzi" width="600" height="400" class="w-full h-auto" />
-          </a>
-        </article>
+        <ul class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-2 text-sm text-slate-600">
+          <li><strong class="text-slate-900 dark:text-white">Experience:</strong> 5+ years</li>
+          <li><strong class="text-slate-900 dark:text-white">Languages:</strong> EN / ES</li>
+          <li><strong class="text-slate-900 dark:text-white">Remote:</strong> Available</li>
+          <li><strong class="text-slate-900 dark:text-white">Location:</strong> Honduras</li>
+        </ul>
       </div>
+
+      <aside class="rounded-xl p-4 bg-white shadow-md dark:bg-slate-800">
+        <img src="./res/profile.webp" alt="Joann Murillo portrait" class="w-40 h-40 rounded-full object-cover mx-auto border-4 border-white shadow-sm" />
+        <h3 class="mt-4 text-center text-xl font-semibold text-slate-900 dark:text-white">Hector Joann Murillo Mejia</h3>
+        <p class="text-center text-sm text-slate-500 dark:text-slate-300">Frontend Engineer</p>
+        <div class="mt-4 flex justify-center gap-2">
+          <a href="https://github.com/jomudev" target="_blank" rel="noopener" class="text-slate-700 dark:text-slate-100 hover:text-slate-900">GitHub</a>
+          <a href="https://www.linkedin.com/in/hector-joann-murillo-mejia/" target="_blank" rel="noopener" class="text-slate-700 dark:text-slate-100 hover:text-slate-900">LinkedIn</a>
+          <a href="https://play.google.com/store/apps/dev?id=8791295978489296138" target="_blank" rel="noopener" class="text-slate-700 dark:text-slate-100 hover:text-slate-900">Apps</a>
+        </div>
+      </aside>
     </section>
   </main>
-  
-  <footer class="bg-gradient-to-r from-primary-800 to-primary-900 text-white py-12">
-    <div class="max-w-6xl mx-auto px-4 md:flex items-center">
-      <div class="md:w-3/4 mb-6 md:mb-0 md:pr-8">
-        <p class="text-lg">
-          Una plática en persona es la mejor forma de conocer a alguien.
-          Ponte en contacto conmigo, me conocerás mejor tomando un café ☕
-        </p>
+
+  <!-- Skills / Stacks -->
+  <section id="skills" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Technology Stack</h2>
+    <p class="mt-2 text-slate-600 dark:text-slate-300 max-w-2xl">Comprehensive set of technologies I use to deliver full product lifecycles — from prototype to production.</p>
+
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Frontend -->
+      <div class="bg-white p-5 rounded-lg shadow-sm dark:bg-slate-800">
+        <h3 class="font-semibold text-slate-900 dark:text-white">Frontend</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-300 mt-1">User interfaces & UX-focused implementations</p>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li class="flex items-center gap-3"><span class="inline-block w-2 h-2 bg-primary-600 rounded-full"></span><strong>Languages:</strong> JavaScript, TypeScript, HTML, CSS</li>
+          <li class="flex items-center gap-3"><span class="inline-block w-2 h-2 bg-primary-600 rounded-full"></span><strong>Frameworks:</strong> React, Next.js, Vite</li>
+          <li class="flex items-center gap-3"><span class="inline-block w-2 h-2 bg-primary-600 rounded-full"></span><strong>Mobile:</strong> React Native, Expo</li>
+          <li class="flex items-center gap-3"><span class="inline-block w-2 h-2 bg-primary-600 rounded-full"></span><strong>Styling:</strong> Tailwind CSS, CSS Modules, Styled Components</li>
+          <li class="flex items-center gap-3"><span class="inline-block w-2 h-2 bg-primary-600 rounded-full"></span><strong>Accessibility:</strong> WCAG, ARIA, semantic HTML</li>
+        </ul>
       </div>
-      <div class="md:w-1/4">
-        <a class="contact-telegram inline-block bg-white hover:bg-primary-50 text-primary-700 font-medium px-6 py-3 rounded-lg transition-colors text-center w-full shadow-md hover:shadow-lg" target="_blank" href="https://telegram.me/joannmurillo" aria-label="Contactar por Telegram">
-          💬 Chat Por Telegram
-        </a>
+
+      <!-- Backend & APIs -->
+      <div class="bg-white p-5 rounded-lg shadow-sm dark:bg-slate-800">
+        <h3 class="font-semibold text-slate-900 dark:text-white">Backend & APIs</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-300 mt-1">APIs, services and server-side engineering</p>
+        <ul class="mt-3 space-y-2 text-sm">
+          <li><strong>Runtimes:</strong> Node.js, Deno</li>
+          <li><strong>Frameworks:</strong> Express, NestJS, Fastify</li>
+          <li><strong>API Design:</strong> REST, GraphQL (Apollo), gRPC</li>
+          <li><strong>Auth:</strong> OAuth2, OpenID Connect, JWT, Firebase Auth</li>
+          <li><strong>Caching:</strong> Redis, CDN strategies</li>
+        </ul>
+      </div>
+
+      <!-- Data & Cloud -->
+      <div class="bg-white p-5 rounded-lg shadow-sm dark:bg-slate-800">
+        <h3 class="font-semibold text-slate-900 dark:text-white">Databases & Cloud</h3>
+        <p class="text-sm text-slate-500 dark:text-slate-300 mt-1">Reliable storage & infrastructure</p>
+        <ul class="mt-3 space-y-2 text-sm dark:text-slate-300">
+          <li><strong>Relational:</strong> PostgreSQL, MySQL, SQL Server</li>
+          <li><strong>NoSQL:</strong> MongoDB</li>
+          <li><strong>Cloud:</strong> AWS (Lambda, ECS, EKS, RDS, S3), GCP</li>
+          <li><strong>Infra:</strong> Docker</li>
+          <li><strong>CI/CD:</strong> GitHub</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Additional Tools -->
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-5 rounded-lg shadow-sm dark:bg-slate-800">
+        <h4 class="font-semibold dark:text-white">Testing & Quality</h4>
+        <ul class="mt-3 text-sm space-y-2 dark:text-white">
+          <li>Jest, React Testing Library, Detox, Cypress, Playwright</li>
+          <li>Type checking with TypeScript, ESLint, Prettier</li>
+          <li>Performance audits: Lighthouse, WebPageTest</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-5 rounded-lg shadow-sm dark:bg-slate-800">
+        <h4 class="font-semibold dark:text-white">Observability & Productivity</h4>
+        <ul class="mt-3 text-sm space-y-2 dark:text-white">
+          <li>Monitoring: Sentry, Datadog, Prometheus</li>
+          <li>Logging: ELK / EFK, CloudWatch</li>
+          <li>Project tools: Jira, Linear, Notion, Figma (design → dev collaboration)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex items-center justify-between">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Selected Projects</h2>
+      <p class="text-sm text-slate-500">Production systems, mobile apps, and developer tools.</p>
+    </div>
+
+    <!-- Lili's Delivery -->
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden dark:bg-slate-800">
+        <div class="md:flex">
+          <div class="md:w-2/3 p-6">
+            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Lili's Delivery</h3>
+            <p class="mt-2 text-slate-600 dark:text-slate-300">Local delivery mobile app with country-aware payments, order validation and driver tracking.</p>
+            <ul class="mt-4 text-sm space-y-2">
+              <li><strong>Tech:</strong> React Native, Expo, Firebase, Stripe / MercadoPago integration, Google Maps, Google Routes, Google Directions</li>
+              <li><strong>Highlights:</strong> Multi-country payment flows, robust order validation, push notifications and geolocation heuristics.</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a href="https://play.google.com/store/apps/details?id=com.jomudev.liliDeliveryCustomer" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-primary-600 dark:text-white rounded-md">Google Play ↗</a>
+              <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 border rounded-md">Book a demo</a>
+            </div>
+          </div>
+          <div class="md:w-1/3 p-4 flex items-center justify-center">
+            <img src="./res/lili_preview_screenshot.jpg" alt="Lili's Delivery screenshot" class="rounded-lg w-full h-auto object-cover shadow" />
+          </div>
+        </div>
+      </article>
+
+    <div class="mt-6 space-y-6">
+      <!-- Legajuu -->
+      <article class="bg-white rounded-lg shadow-sm overflow-hidden dark:bg-slate-800">
+        <div class="md:flex">
+          <div class="md:w-2/3 p-6">
+            <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Legajuu!</h3>
+            <p class="mt-2 text-slate-600 dark:text-slate-300">Document management platform for teachers to store, convert and format documents (PDF generation, image preprocessing, mobile-first).</p>
+            <ul class="mt-4 text-sm space-y-2">
+              <li><strong>Tech:</strong> React, Next.js, Node.js, Firebase</li>
+              <li><strong>Highlights:</strong> Image-to-PDF pipeline, user-friendly mobile capture, automated naming and templates for administrative submissions.</li>
+              <li><strong>Impact:</strong> Reduced time-to-apply by 80% for target users and removed dependence on external cyber cafes.</li>
+            </ul>
+            <div class="mt-4 flex gap-3">
+              <a href="https://legajuu.vercel.app" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2 bg-primary-600 dark:text-white rounded-md shadow">Live site ↗</a>
+              <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 border rounded-md">Discuss similar project</a>
+            </div>
+          </div>
+          <div class="md:w-1/3 p-4 flex items-center justify-center">
+            <img src="./res/Legajoo_preview_screenshot.webp" alt="Legajuu screenshot" class="rounded-lg w-full h-auto object-cover shadow" />
+          </div>
+        </div>
+      </article>
+
+      <!-- Maythe's Sales & Hompai (short cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="bg-white p-6 rounded-lg shadow-sm dark:bg-slate-800">
+          <h4 class="font-semibold">Maythe's Sales</h4>
+          <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">Marketplace app for small vendors to share products and manage sales.</p>
+          <p class="text-sm mt-2"><strong>Tech:</strong> React Native, Node.js, Firebase</p>
+          <div class="mt-3">
+            <a href="https://play.google.com/store/apps/details?id=com.maythesalesmobile" target="_blank" rel="noopener" class="text-primary-600">View on Play ↗</a>
+          </div>
+        </article>
+
+        <article class="bg-white p-6 rounded-lg shadow-sm dark:bg-slate-800">
+          <h4 class="font-semibold">Hompai</h4>
+          <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">Grocery list & budgeting mobile tool designed to reduce overspending at the supermarket.</p>
+          <p class="text-sm mt-2"><strong>Tech:</strong> React Native, LocalStorage / SQLite</p>
+          <div class="mt-3">
+            <a href="https://play.google.com/store/apps/details?id=com.hompaimobile" target="_blank" rel="noopener" class="text-primary-600">View on Play ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience / Why hire me -->
+  <section id="experience" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Why hire me?</h2>
+    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-sm dark:bg-slate-800">
+        <h4 class="font-semibold">Product-led engineering</h4>
+        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">I focus on outcomes: faster iteration, measurable KPIs, and shipping features that delight users.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-sm dark:bg-slate-800">
+        <h4 class="font-semibold">End-to-end delivery</h4>
+        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">From prototypes to production: frontend, APIs, infra, monitoring and CI/CD — I take projects across the finish line.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-sm dark:bg-slate-800">
+        <h4 class="font-semibold">Mentorship & collaboration</h4>
+        <p class="text-sm mt-2 text-slate-600 dark:text-slate-300">Experienced collaborating with designers, PMs and engineers; I prioritize clear code, docs and knowledge transfer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="p-6 rounded-lg shadow-sm dark:bg-slate-800">
+      <div class="md:flex md:items-center md:justify-between">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Ready to collaborate?</h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">If you're looking for a pragmatic engineer who delivers across the stack, let's schedule a call.</p>
+        </div>
+        <div class="mt-4 md:mt-0 flex gap-3">
+          <a href="mailto:hector.joannmurillo81@gmail.com" class="inline-flex items-center gap-2 bg-primary-600 text-white px-5 py-3 rounded-lg">Email me</a>
+          <a href="https://wa.me/+50498375904" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border px-4 py-3 rounded-lg">Whatsapp</a>
+        </div>
+      </div>
+
+      <form class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4" action="mailto:joannmurillo81@gmail.com" method="post" enctype="text/plain" aria-label="Contact form">
+        <input name="name" placeholder="Full name" class="p-3 rounded-md border" />
+        <input name="email" type="email" placeholder="Email" class="p-3 rounded-md border" />
+        <input name="company" placeholder="Company (optional)" class="p-3 rounded-md border" />
+        <textarea name="message" placeholder="Brief message / project details" class="md:col-span-3 p-3 rounded-md border h-28"></textarea>
+        <div class="md:col-span-3 flex gap-3 justify-end">
+          <button type="submit" class="bg-accent-500 text-white px-5 py-3 rounded-lg">Send message</button>
+          <a href="./res/Joann_Murillo_Resume.pdf" class="px-4 py-3 border rounded-lg" target="_blank">Download CV</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm">© <strong>Joann Murillo</strong> Built with care. <span class="hidden sm:inline">Honduras</span></p>
+      <div class="flex gap-3">
+        <a href="https://github.com/jomudev" class="text-sm dark:text-white hover:underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/hector-joann-murillo-mejia/" class="text-sm dark:text-white hover:underline">LinkedIn</a>
+        <a href="https://play.google.com/store/apps/dev?id=8791295978489296138" class="text-sm dark:text-white hover:underline">Apps</a>
       </div>
     </div>
   </footer>
 
-  <style>
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-    
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: #0ea5e9;
-      color: white;
-      padding: 8px;
-      z-index: 100;
-      transition: top 0.3s;
-    }
-    
-    .skip-link:focus {
-      top: 0;
-    }
-  </style>
+  <!-- Scripts: theme toggle + mobile menu -->
+  <!-- <script>
+    // Theme toggle (persist in localStorage)
+    (function(){
+      const btn = document.getElementById('theme-toggle');
+      const icon = document.getElementById('theme-icon');
+      const userPref = localStorage.getItem('theme');
+
+      function setTheme(theme) {
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+          document.body.classList.add('bg-slate-900');
+          icon.innerHTML = '<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>';
+        } else {
+          document.documentElement.classList.remove('dark');
+          document.body.classList.remove('bg-slate-900');
+          icon.innerHTML = '<path d="M12 3v1M12 20v1M4.22 4.22l.7.7M18.08 18.08l.7.7M1 12h1M22 12h1M4.22 19.78l.7-.7M18.08 5.92l.7-.7M12 6a6 6 0 100 12 6 6 0 000-12z"/>';
+        }
+      }
+
+      // initialize
+      if (userPref) setTheme(userPref);
+      else {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setTheme(prefersDark ? 'dark' : 'light');
+      }
+
+      btn.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        setTheme(isDark ? 'dark' : 'light');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      });
+    })();
+
+    // Mobile menu
+    (function(){
+      const open = document.getElementById('mobile-open');
+      const close = document.getElementById('mobile-close');
+      const panel = document.getElementById('mobile-panel');
+
+      open?.addEventListener('click', () => panel.classList.remove('hidden'));
+      close?.addEventListener('click', () => panel.classList.add('hidden'));
+      panel?.addEventListener('click', (e) => { if (e.target === panel) panel.classList.add('hidden'); });
+    })();
+  </script> -->
 </body>
 </html>
